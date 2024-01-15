@@ -52,6 +52,14 @@ p {
     border-radius: 1.25rem;
     border: 1px solid var(--black);
     box-shadow: 0.5rem 0.5rem 0 var(--black);
+    color: var(--black);
+    text-decoration: none;
+    transition: box-shadow 0.15s;
+}
+
+.card:hover,
+.card:focus {
+    box-shadow: 1rem 1rem 0 var(--black);
 }
 
 .card-image {
@@ -80,6 +88,12 @@ p {
 .card-title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    transition: color 0.15s;
+}
+
+.card:hover .card-title,
+.card:focus .card-title {
+    color: var(--yellow);
 }
 
 .card-text {
